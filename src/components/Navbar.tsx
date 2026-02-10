@@ -6,19 +6,33 @@ import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isHidden, setIsHidden] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            const currentScrollY = window.scrollY;
+
+            // Set scrolled state
+            setIsScrolled(currentScrollY > 20);
+
+            // Hide navbar when scrolling down, show when scrolling up
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                setIsHidden(true);
+            } else {
+                setIsHidden(false);
+            }
+
+            setLastScrollY(currentScrollY);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [lastScrollY]);
 
     return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
             <div className="container navbar-container">
                 <a href="/" className="logo">
                     <img src="/logo.png" alt="GetBenefits Logo" />
