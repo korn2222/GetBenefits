@@ -35,7 +35,7 @@ const Navbar = () => {
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isHidden ? 'hidden' : ''}`}>
             <div className="container navbar-container">
                 <a href="/" className="logo">
-                    <img src="/logo.png" alt="GetBenefits Logo" />
+                    <img src="/logo.png" alt="GetBenefit Logo" />
                 </a>
 
                 {/* Desktop Menu */}
