@@ -751,3 +751,102 @@ h6 {
     display: none;
   }
 }
+
+/* Language Selector Component */
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-selector-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.language-selector-button:hover {
+  background: var(--background);
+  border-color: var(--primary);
+}
+
+.language-flag {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.language-label {
+  font-weight: 500;
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  min-width: 160px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.language-option:hover {
+  background: var(--surface);
+}
+
+.language-option.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Mobile responsiveness for language selector */
+@media (max-width: 768px) {
+  .language-selector {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .language-selector-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .language-dropdown {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

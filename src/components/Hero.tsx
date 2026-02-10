@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, TrendingUp, Shield, Clock, PoundSterling } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const Hero = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="hero-section">
             <div className="container hero-container">
@@ -12,12 +15,12 @@ const Hero = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="hero-content"
                 >
-                    <div className="badge">Trusted UK Benefits Assistance</div>
+                    <div className="badge">{t('hero.badge')}</div>
                     <h1 className="hero-title">
-                        Maximize Your <span className="text-primary">Universal Credit</span> Claim Today
+                        {t('hero.title.start')}<span className="text-primary">{t('hero.title.highlight')}</span>{t('hero.title.end')}
                     </h1>
                     <p className="hero-subtitle">
-                        We simplify the process. Our experts help people living in the UK apply for and receive the government benefits they are entitled to.
+                        {t('hero.subtitle')}
                     </p>
                 </motion.div>
 
@@ -34,8 +37,8 @@ const Hero = () => {
                                 <PoundSterling size={32} />
                             </div>
                             <div>
-                                <h3 className="stats-title">Average Monthly Benefit</h3>
-                                <p className="stats-amount">£1,200+</p>
+                                <h3 className="stats-title">{t('hero.stats.title')}</h3>
+                                <p className="stats-amount">{t('hero.stats.amount')}</p>
                             </div>
                         </div>
 
@@ -47,7 +50,7 @@ const Hero = () => {
                                     <CheckCircle size={20} />
                                 </div>
                                 <div>
-                                    <p className="stats-item-label">Success Rate</p>
+                                    <p className="stats-item-label">{t('hero.stats.successRate')}</p>
                                     <p className="stats-item-value">94%</p>
                                 </div>
                             </div>
@@ -56,8 +59,8 @@ const Hero = () => {
                                     <Clock size={20} />
                                 </div>
                                 <div>
-                                    <p className="stats-item-label">Avg. Processing</p>
-                                    <p className="stats-item-value">2 Weeks</p>
+                                    <p className="stats-item-label">{t('hero.stats.processing')}</p>
+                                    <p className="stats-item-value">{t('hero.stats.processingValue')}</p>
                                 </div>
                             </div>
                             <div className="stats-item">
@@ -65,7 +68,7 @@ const Hero = () => {
                                     <Shield size={20} />
                                 </div>
                                 <div>
-                                    <p className="stats-item-label">Claims Helped</p>
+                                    <p className="stats-item-label">{t('hero.stats.claimsHelped')}</p>
                                     <p className="stats-item-value">12,450+</p>
                                 </div>
                             </div>
@@ -75,10 +78,10 @@ const Hero = () => {
                     {/* CTAs under the stats card */}
                     <div className="hero-actions" style={{ marginTop: '1.5rem' }}>
                         <a href="#contact" className="btn btn-primary btn-lg">
-                            Start Your Claim <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
+                            {t('hero.cta.startClaim')} <ArrowRight size={20} style={{ marginLeft: '0.5rem' }} />
                         </a>
                         <a href="#how-it-works" className="btn btn-outline btn-lg">
-                            How it Works
+                            {t('hero.cta.howItWorks')}
                         </a>
                     </div>
 
@@ -86,11 +89,11 @@ const Hero = () => {
                     <div className="hero-validation" style={{ marginTop: '1rem', justifyContent: 'center' }}>
                         <div className="validation-item">
                             <CheckCircle size={16} className="text-cta" />
-                            <span>No Win, No Fee</span>
+                            <span>{t('hero.validation.noWinNoFee')}</span>
                         </div>
                         <div className="validation-item">
                             <TrendingUp size={16} className="text-primary" />
-                            <span>Expert Guidance</span>
+                            <span>{t('hero.validation.expertGuidance')}</span>
                         </div>
                     </div>
                 </motion.div>

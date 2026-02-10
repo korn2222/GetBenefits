@@ -1,33 +1,37 @@
+import { useLanguage } from '../i18n/LanguageContext';
+
 const Footer = () => {
+    const { t } = useLanguage();
+
     return (
         <footer className="footer-section">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="footer-brand">
                         <div className="font-bold text-xl text-primary mb-4">GetBenefits</div>
-                        <p className="text-muted text-sm">Helping you access the support you deserve.</p>
+                        <p className="text-muted text-sm">{t('footer.tagline')}</p>
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-4">Services</h4>
+                        <h4 className="font-bold mb-4">{t('footer.services')}</h4>
                         <ul className="footer-links">
-                            <li><a href="#">Universal Credit</a></li>
-                            <li><a href="#">Eligibility Check</a></li>
-                            <li><a href="#">Appeals</a></li>
+                            <li><a href="#">{t('footer.universalCredit')}</a></li>
+                            <li><a href="#">{t('footer.eligibilityCheck')}</a></li>
+                            <li><a href="#">{t('footer.appeals')}</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-4">Company</h4>
+                        <h4 className="font-bold mb-4">{t('footer.company')}</h4>
                         <ul className="footer-links">
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#about">{t('footer.aboutUs')}</a></li>
+                            <li><a href="#contact">{t('footer.contact')}</a></li>
+                            <li><a href="#">{t('footer.privacyPolicy')}</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-bold mb-4">Contact</h4>
+                        <h4 className="font-bold mb-4">{t('footer.contactTitle')}</h4>
                         <ul className="footer-links">
                             <li>Email: info@getbenefits.uk</li>
                             <li>Phone: 0800 123 4567</li>
@@ -36,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-200 pt-8 text-center text-sm text-muted">
-                    &copy; {new Date().getFullYear()} GetBenefits. All rights reserved.
+                    &copy; {new Date().getFullYear()} {t('footer.copyright')}
                 </div>
             </div>
         </footer>

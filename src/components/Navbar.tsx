@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { t } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,10 +26,11 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="desktop-menu">
-                    <a href="#how-it-works" className="nav-link">How It Works</a>
-                    <a href="#features" className="nav-link">Benefits</a>
-                    <a href="#about" className="nav-link">About</a>
-                    <a href="#contact" className="btn btn-primary">Apply Now</a>
+                    <a href="#how-it-works" className="nav-link">{t('nav.howItWorks')}</a>
+                    <a href="#features" className="nav-link">{t('nav.benefits')}</a>
+                    <a href="#about" className="nav-link">{t('nav.about')}</a>
+                    <LanguageSelector />
+                    <a href="#contact" className="btn btn-primary">{t('nav.applyNow')}</a>
                 </div>
 
                 {/* Mobile Menu Toggle */}
@@ -48,10 +52,11 @@ const Navbar = () => {
                         className="mobile-menu"
                     >
                         <div className="container mobile-menu-content">
-                            <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
-                            <a href="#features" onClick={() => setIsMobileMenuOpen(false)}>Benefits</a>
-                            <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-                            <a href="#contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>Apply Now</a>
+                            <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.howItWorks')}</a>
+                            <a href="#features" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.benefits')}</a>
+                            <a href="#about" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.about')}</a>
+                            <LanguageSelector />
+                            <a href="#contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>{t('nav.applyNow')}</a>
                         </div>
                     </motion.div>
                 )}
@@ -61,3 +66,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

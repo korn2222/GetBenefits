@@ -1,15 +1,18 @@
+import { useLanguage } from '../i18n/LanguageContext';
 
 const CTA = () => {
+    const { t } = useLanguage();
+
     return (
         <section id="contact" className="section cta-section">
             <div className="container relative z-10">
-                <h2 className="cta-title">Ready to Get What You're Owed?</h2>
+                <h2 className="cta-title">{t('cta.title')}</h2>
                 <p className="cta-subtitle">
-                    Thousands of people in the UK are missing out on benefits they are entitled to. Don't be one of them.
+                    {t('cta.subtitle')}
                 </p>
                 <div className="cta-actions">
                     <button className="btn btn-cta">
-                        Start Your Free Assessment
+                        {t('cta.button')}
                     </button>
                 </div>
             </div>

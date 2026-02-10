@@ -1,19 +1,23 @@
+import { useLanguage } from '../i18n/LanguageContext';
+
 const HowItWorks = () => {
+    const { t } = useLanguage();
+
     const steps = [
         {
             number: "1",
-            title: "Consultation",
-            description: "We discuss your situation to understand your eligibility."
+            title: t('howItWorks.step1.title'),
+            description: t('howItWorks.step1.desc')
         },
         {
             number: "2",
-            title: "Application",
-            description: "Our experts guide you through the application forms."
+            title: t('howItWorks.step2.title'),
+            description: t('howItWorks.step2.desc')
         },
         {
             number: "3",
-            title: "Approval",
-            description: "Receive your decision and start getting your benefits."
+            title: t('howItWorks.step3.title'),
+            description: t('howItWorks.step3.desc')
         }
     ];
 
@@ -21,8 +25,8 @@ const HowItWorks = () => {
         <section id="how-it-works" className="section how-it-works-section bg-surface">
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="section-title">Simple 3-Step Process</h2>
-                    <p className="section-subtitle">Getting your benefits shouldn't be complicated.</p>
+                    <h2 className="section-title">{t('howItWorks.title')}</h2>
+                    <p className="section-subtitle">{t('howItWorks.subtitle')}</p>
                 </div>
 
                 <div className="steps-container grid grid-cols-1 md:grid-cols-3 gap-8">
