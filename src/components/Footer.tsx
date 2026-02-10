@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="footer-brand">
-                        <div className="font-bold text-xl text-primary mb-4">GetBenefits</div>
+                        <div className="font-bold text-xl text-primary mb-4">GetBenefit</div>
                         <p className="text-muted text-sm">{t('footer.tagline')}</p>
                     </div>
 
@@ -33,8 +33,8 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-4">{t('footer.contactTitle')}</h4>
                         <ul className="footer-links">
-                            <li>Email: info@getbenefits.uk</li>
-                            <li>Phone: 0800 123 4567</li>
+                            <li>Email: info@getbenefit.uk</li>
+                            <li>Phone: +44 7902 225168</li>
                         </ul>
                     </div>
                 </div>
