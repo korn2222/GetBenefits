@@ -15,43 +15,43 @@ const Reviews = () => {
     // Placeholder reviews - you can easily replace these with real ones
     const reviews: Review[] = [
         {
-            name: "John Smith",
-            photo: "/reviews/placeholder1.jpg", // Replace with real photo
+            name: "Gonçalo Ferreira",
+            photo: "/reviews/placeholder1.jpg",
             title: t('reviews.review1.title'),
             review: t('reviews.review1.text'),
             rating: 5
         },
         {
-            name: "Maria Rodriguez",
-            photo: "/reviews/placeholder2.jpg", // Replace with real photo
+            name: "Zarine Sousa",
+            photo: "/reviews/placeholder2.jpg",
             title: t('reviews.review2.title'),
             review: t('reviews.review2.text'),
             rating: 5
         },
         {
-            name: "Piotr Kowalski",
-            photo: "/reviews/placeholder3.jpg", // Replace with real photo
+            name: "Mauro Costa da Silva",
+            photo: "/reviews/placeholder3.jpg",
             title: t('reviews.review3.title'),
             review: t('reviews.review3.text'),
             rating: 5
         },
         {
-            name: "Sarah Johnson",
-            photo: "/reviews/placeholder4.jpg", // Replace with real photo
+            name: "Chloe Loizou",
+            photo: "/reviews/placeholder4.jpg",
             title: t('reviews.review4.title'),
             review: t('reviews.review4.text'),
             rating: 5
         },
         {
-            name: "Ahmed Hassan",
-            photo: "/reviews/placeholder5.jpg", // Replace with real photo
+            name: "Qays Al-Haussan",
+            photo: "/reviews/placeholder5.jpg",
             title: t('reviews.review5.title'),
             review: t('reviews.review5.text'),
             rating: 5
         },
         {
-            name: "Sophie Chen",
-            photo: "/reviews/placeholder6.jpg", // Replace with real photo
+            name: "Eliud Kamau",
+            photo: "/reviews/placeholder6.jpg",
             title: t('reviews.review6.title'),
             review: t('reviews.review6.text'),
             rating: 5
