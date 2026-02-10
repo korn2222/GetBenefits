@@ -78,6 +78,28 @@ export const translations: Record<Language, Record<string, string>> = {
         'footer.privacyPolicy': 'Privacy Policy',
         'footer.contactTitle': 'Contact',
         'footer.copyright': 'GetBenefits. All rights reserved.',
+
+        // Stats
+        'stats.peopleHelped': 'People Helped',
+        'stats.benefitsCollected': 'Benefits Collected',
+        'stats.yearsExperience': 'Years of Experience',
+        'stats.teamMembers': 'Team Members',
+
+        // Reviews
+        'reviews.title': 'What Our Clients Say',
+        'reviews.subtitle': 'Real stories from people we\'ve helped claim their benefits.',
+        'reviews.review1.title': 'Amazing service, got my claim approved!',
+        'reviews.review1.text': 'The team at GetBenefits made the entire process so easy. They helped me gather all the documents and guided me through every step. I received my Universal Credit within 2 weeks!',
+        'reviews.review2.title': 'Professional and caring support',
+        'reviews.review2.text': 'I was struggling with my application for months. GetBenefits reviewed everything and found issues I didn\'t know about. Thanks to them, I now receive £800 more per month!',
+        'reviews.review3.title': 'Highly recommend to everyone',
+        'reviews.review3.text': 'As a non-native English speaker, I found the benefits system very confusing. The team helped me in my language and made sure I got everything I was entitled to. Truly grateful!',
+        'reviews.review4.title': 'Life-changing support',
+        'reviews.review4.text': 'After losing my job, I was overwhelmed by the benefits process. GetBenefits handled everything for me and I started receiving payments much faster than expected. They truly care about helping people.',
+        'reviews.review5.title': 'Exceeded all expectations',
+        'reviews.review5.text': 'I had been rejected twice before finding GetBenefits. They reviewed my case, identified what went wrong, and helped me successfully appeal. I now receive the full amount I\'m entitled to!',
+        'reviews.review6.title': 'Professional and efficient',
+        'reviews.review6.text': 'The process was so smooth! They explained everything clearly, kept me updated at every step, and made sure all my documents were perfect. Got approved on the first try thanks to their expertise.',
     },
 
     pl: {
@@ -132,6 +154,28 @@ export const translations: Record<Language, Record<string, string>> = {
         'footer.privacyPolicy': 'Polityka prywatności',
         'footer.contactTitle': 'Kontakt',
         'footer.copyright': 'GetBenefits. Wszelkie prawa zastrzeżone.',
+
+        // Stats
+        'stats.peopleHelped': 'Pomogliśmy Osobom',
+        'stats.benefitsCollected': 'Zebrane Świadczenia',
+        'stats.yearsExperience': 'Lat Doświadczenia',
+        'stats.teamMembers': 'Członków Zespołu',
+
+        // Reviews
+        'reviews.title': 'Co mówią nasi klienci',
+        'reviews.subtitle': 'Prawdziwe historie osób, którym pomogliśmy uzyskać świadczenia.',
+        'reviews.review1.title': 'Niesamowita usługa, mój wniosek został zatwierdzony!',
+        'reviews.review1.text': 'Zespół GetBenefits sprawił, że cały proces był bardzo prosty. Pomogli mi zebrać wszystkie dokumenty i prowadzili mnie przez każdy krok. Otrzymałem Universal Credit w ciągu 2 tygodni!',
+        'reviews.review2.title': 'Profesjonalne i troskliwe wsparcie',
+        'reviews.review2.text': 'Zmagałem się z aplikacją przez miesiące. GetBenefits przejrzał wszystko i znalazł problemy, o których nie wiedziałem. Dzięki nim otrzymuję teraz £800 więcej miesięcznie!',
+        'reviews.review3.title': 'Gorąco polecam wszystkim',
+        'reviews.review3.text': 'Jako osoba nie mówiąca po angielsku, system świadczeń był dla mnie bardzo zagmatwany. Zespół pomógł mi w moim języku i upewnił się, że otrzymałem wszystko, do czego miałem prawo. Naprawdę wdzięczny!',
+        'reviews.review4.title': 'Wsparcie zmieniające życie',
+        'reviews.review4.text': 'Po utracie pracy byłem przytłoczony procesem ubiegania się o świadczenia. GetBenefits zajął się wszystkim za mnie i zacząłem otrzymywać płatności znacznie szybciej niż oczekiwałem. Naprawdę dbają o pomoc ludziom.',
+        'reviews.review5.title': 'Przekroczyło wszystkie oczekiwania',
+        'reviews.review5.text': 'Zostałem odrzucony dwukrotnie przed znalezieniem GetBenefits. Przeanalizowali moją sprawę, zidentyfikowali co poszło nie tak i pomogli mi skutecznie odwołać się. Teraz otrzymuję pełną kwotę, do której mam prawo!',
+        'reviews.review6.title': 'Profesjonalnie i sprawnie',
+        'reviews.review6.text': 'Proces był tak płynny! Wyjaśnili wszystko wyraźnie, informowali mnie na każdym kroku i upewnili się, że wszystkie moje dokumenty były perfekcyjne. Zatwierdzono za pierwszym razem dzięki ich ekspertyzie.',
     },
 
     pt: {
@@ -186,6 +230,28 @@ export const translations: Record<Language, Record<string, string>> = {
         'footer.privacyPolicy': 'Política de privacidade',
         'footer.contactTitle': 'Contacto',
         'footer.copyright': 'GetBenefits. Todos os direitos reservados.',
+
+        // Stats
+        'stats.peopleHelped': 'Pessoas Ajudadas',
+        'stats.benefitsCollected': 'Benefícios Recolhidos',
+        'stats.yearsExperience': 'Anos de Experiência',
+        'stats.teamMembers': 'Membros da Equipa',
+
+        // Reviews
+        'reviews.title': 'O Que Dizem os Nossos Clientes',
+        'reviews.subtitle': 'Histórias reais de pessoas que ajudámos a reclamar os seus benefícios.',
+        'reviews.review1.title': 'Serviço incrível, consegui aprovação!',
+        'reviews.review1.text': 'A equipa GetBenefits tornou todo o processo muito fácil. Ajudaram-me a reunir todos os documentos e guiaram-me em cada passo. Recebi o meu Universal Credit em 2 semanas!',
+        'reviews.review2.title': 'Suporte profissional e atencioso',
+        'reviews.review2.text': 'Estava a lutar com a minha candidatura há meses. A GetBenefits reviu tudo e encontrou problemas que eu não conhecia. Graças a eles, agora recebo mais £800 por mês!',
+        'reviews.review3.title': 'Recomendo vivamente a todos',
+        'reviews.review3.text': 'Como falante não nativo de inglês, achei o sistema de benefícios muito confuso. A equipa ajudou-me no meu idioma e garantiu que recebi tudo a que tinha direito. Verdadeiramente grato!',
+        'reviews.review4.title': 'Apoio que mudou a vida',
+        'reviews.review4.text': 'Depois de perder o meu emprego, estava sobrecarregado com o processo de benefícios. A GetBenefits tratou de tudo por mim e comecei a receber pagamentos muito mais rápido do que esperava. Eles realmente se preocupam em ajudar as pessoas.',
+        'reviews.review5.title': 'Superou todas as expectativas',
+        'reviews.review5.text': 'Tinha sido rejeitado duas vezes antes de encontrar a GetBenefits. Eles reviram o meu caso, identificaram o que correu mal e ajudaram-me a recorrer com sucesso. Agora recebo o valor total a que tenho direito!',
+        'reviews.review6.title': 'Profissional e eficiente',
+        'reviews.review6.text': 'O processo foi tão tranquilo! Explicaram tudo claramente, mantiveram-me atualizado em cada passo e garantiram que todos os meus documentos estavam perfeitos. Aprovado na primeira tentativa graças à sua experiência.',
     },
 
     it: {
@@ -240,6 +306,28 @@ export const translations: Record<Language, Record<string, string>> = {
         'footer.privacyPolicy': 'Informativa sulla privacy',
         'footer.contactTitle': 'Contatti',
         'footer.copyright': 'GetBenefits. Tutti i diritti riservati.',
+
+        // Stats
+        'stats.peopleHelped': 'Persone Aiutate',
+        'stats.benefitsCollected': 'Benefici Raccolti',
+        'stats.yearsExperience': 'Anni di Esperienza',
+        'stats.teamMembers': 'Membri del Team',
+
+        // Reviews
+        'reviews.title': 'Cosa Dicono i Nostri Clienti',
+        'reviews.subtitle': 'Storie reali di persone che abbiamo aiutato a richiedere i loro benefici.',
+        'reviews.review1.title': 'Servizio fantastico, richiesta approvata!',
+        'reviews.review1.text': 'Il team di GetBenefits ha reso l\'intero processo così facile. Mi hanno aiutato a raccogliere tutti i documenti e mi hanno guidato in ogni passaggio. Ho ricevuto il mio Universal Credit entro 2 settimane!',
+        'reviews.review2.title': 'Supporto professionale e premuroso',
+        'reviews.review2.text': 'Stavo lottando con la mia domanda da mesi. GetBenefits ha rivisto tutto e ha trovato problemi di cui non ero a conoscenza. Grazie a loro, ora ricevo £800 in più al mese!',
+        'reviews.review3.title': 'Consiglio vivamente a tutti',
+        'reviews.review3.text': 'Come parlante non madrelingua inglese, ho trovato il sistema dei benefici molto confuso. Il team mi ha aiutato nella mia lingua e si è assicurato che ottenessi tutto ciò a cui avevo diritto. Veramente grato!',
+        'reviews.review4.title': 'Supporto che cambia la vita',
+        'reviews.review4.text': 'Dopo aver perso il mio lavoro, ero sopraffatto dal processo dei benefici. GetBenefits ha gestito tutto per me e ho iniziato a ricevere i pagamenti molto più velocemente del previsto. Si preoccupano davvero di aiutare le persone.',
+        'reviews.review5.title': 'Ha superato tutte le aspettative',
+        'reviews.review5.text': 'Ero stato rifiutato due volte prima di trovare GetBenefits. Hanno esaminato il mio caso, identificato cosa non andava e mi hanno aiutato a fare ricorso con successo. Ora ricevo l\'importo completo a cui ho diritto!',
+        'reviews.review6.title': 'Professionale ed efficiente',
+        'reviews.review6.text': 'Il processo è stato così fluido! Hanno spiegato tutto chiaramente, mi hanno tenuto aggiornato ad ogni passo e si sono assicurati che tutti i miei documenti fossero perfetti. Approvato al primo tentativo grazie alla loro competenza.',
     },
 
     es: {
@@ -294,5 +382,27 @@ export const translations: Record<Language, Record<string, string>> = {
         'footer.privacyPolicy': 'Política de privacidad',
         'footer.contactTitle': 'Contacto',
         'footer.copyright': 'GetBenefits. Todos los derechos reservados.',
+
+        // Stats
+        'stats.peopleHelped': 'Personas Ayudadas',
+        'stats.benefitsCollected': 'Beneficios Recaudados',
+        'stats.yearsExperience': 'Años de Experiencia',
+        'stats.teamMembers': 'Miembros del Equipo',
+
+        // Reviews
+        'reviews.title': 'Lo Que Dicen Nuestros Clientes',
+        'reviews.subtitle': 'Historias reales de personas a las que hemos ayudado a reclamar sus beneficios.',
+        'reviews.review1.title': '¡Servicio increíble, aprobaron mi solicitud!',
+        'reviews.review1.text': 'El equipo de GetBenefits hizo que todo el proceso fuera muy fácil. Me ayudaron a reunir todos los documentos y me guiaron en cada paso. ¡Recibí mi Universal Credit en 2 semanas!',
+        'reviews.review2.title': 'Apoyo profesional y atento',
+        'reviews.review2.text': 'Estaba luchando con mi solicitud durante meses. GetBenefits revisó todo y encontró problemas que no conocía. ¡Gracias a ellos, ahora recibo £800 más al mes!',
+        'reviews.review3.title': 'Recomiendo encarecidamente a todos',
+        'reviews.review3.text': 'Como hablante no nativo de inglés, encontré el sistema de beneficios muy confuso. El equipo me ayudó en mi idioma y se aseguró de que obtuviera todo a lo que tenía derecho. ¡Verdaderamente agradecido!',
+        'reviews.review4.title': 'Apoyo que cambia la vida',
+        'reviews.review4.text': 'Después de perder mi trabajo, estaba abrumado por el proceso de beneficios. GetBenefits se encargó de todo por mí y comencé a recibir pagos mucho más rápido de lo esperado. Realmente se preocupan por ayudar a la gente.',
+        'reviews.review5.title': 'Superó todas las expectativas',
+        'reviews.review5.text': 'Había sido rechazado dos veces antes de encontrar GetBenefits. Revisaron mi caso, identificaron qué salió mal y me ayudaron a apelar con éxito. ¡Ahora recibo la cantidad completa a la que tengo derecho!',
+        'reviews.review6.title': 'Profesional y eficiente',
+        'reviews.review6.text': 'El proceso fue muy fluido! Explicaron todo claramente, me mantuvieron informado en cada paso y se aseguraron de que todos mis documentos estuvieran perfectos. ¡Aprobado en el primer intento gracias a su experiencia!',
     },
 };
