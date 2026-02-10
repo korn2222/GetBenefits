@@ -33,7 +33,7 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-4">{t('footer.contactTitle')}</h4>
                         <ul className="footer-links">
-                            <li>Email: info@getbenefit.uk</li>
+                            <li>Email: contact@getbenefit.uk</li>
                             <li>Phone: +44 7902 225168</li>
                         </ul>
                     </div>
