@@ -11,9 +11,9 @@ const CTA = () => {
                     {t('cta.subtitle')}
                 </p>
                 <div className="cta-actions">
-                    <button className="btn btn-cta">
+                    <a href="https://wa.me/447902225168" target="_blank" rel="noopener noreferrer" className="btn btn-cta">
                         {t('cta.button')}
-                    </button>
+                    </a>
                 </div>
             </div>
 

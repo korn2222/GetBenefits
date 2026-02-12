@@ -1,4 +1,4 @@
-export type Language = 'en' | 'pl' | 'pt' | 'it' | 'es';
+export type Language = 'en' | 'pl' | 'pt' | 'it' | 'es' | 'ro';
 
 export interface LanguageOption {
     code: Language;
@@ -12,6 +12,7 @@ export const languages: LanguageOption[] = [
     { code: 'pt', label: 'Português', flag: '🇵🇹' },
     { code: 'it', label: 'Italiano', flag: '🇮🇹' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'ro', label: 'Română', flag: '🇷🇴' },
 ];
 
 export const translations: Record<Language, Record<string, string>> = {
@@ -404,5 +405,92 @@ export const translations: Record<Language, Record<string, string>> = {
         'reviews.review5.text': 'Había sido rechazado dos veces antes de encontrar GetBenefit. Revisaron mi caso, identificaron qué salió mal y me ayudaron a apelar con éxito. ¡Ahora recibo la cantidad completa a la que tengo derecho!',
         'reviews.review6.title': 'Profesional y eficiente',
         'reviews.review6.text': 'El proceso fue muy fluido! Explicaron todo claramente, me mantuvieron informado en cada paso y se aseguraron de que todos mis documentos estuvieran perfectos. ¡Aprobado en el primer intento gracias a su experiencia!',
+    },
+
+    ro: {
+        // Navbar
+        'nav.howItWorks': 'Cum Funcționează',
+        'nav.benefits': 'Beneficii',
+        'nav.about': 'Despre',
+        'nav.applyNow': 'Aplică Acum',
+
+        // Hero
+        'hero.badge': 'Asistență de încredere pentru beneficii în Regatul Unit',
+        'hero.title.start': 'Maximizează-ți ',
+        'hero.title.highlight': 'Universal Credit',
+        'hero.title.end': ' astăzi',
+        'hero.subtitle': 'Simplificăm procesul. Experții noștri ajută persoanele care locuiesc în Regatul Unit să aplice și să primească beneficiile guvernamentale la care au dreptul.',
+        'hero.stats.title': 'Beneficiul lunar mediu',
+        'hero.stats.amount': '£1,200+',
+        'hero.stats.successRate': 'Rata de succes',
+        'hero.stats.processing': 'Procesare medie',
+        'hero.stats.processingValue': '2 Săptămâni',
+        'hero.stats.claimsHelped': 'Cereri ajutate',
+        'hero.cta.startClaim': 'Începe cererea',
+        'hero.cta.howItWorks': 'Cum funcționează',
+        'hero.validation.noWinNoFee': 'Fără câștig, fără taxă',
+        'hero.validation.expertGuidance': 'Îndrumare de specialitate',
+
+        // Features
+        'features.title.start': 'De ce să alegi ',
+        'features.title.highlight': 'GetBenefit',
+        'features.title.end': '?',
+        'features.subtitle': 'Ne dedicăm să te ajutăm să navighezi cu ușurință prin sistemul de beneficii.',
+        'features.expertKnowledge.title': 'Cunoștințe de specialitate',
+        'features.expertKnowledge.desc': 'Echipa noastră înțelege detaliile sistemului Universal Credit pentru a se asigura că cererea ta este corectă.',
+        'features.maximizeClaim.title': 'Maximizează-ți cererea',
+        'features.maximizeClaim.desc': 'Te ajutăm să identifici toate elementele la care ai dreptul, asigurându-ne că primești suma maximă posibilă.',
+        'features.hassleFree.title': 'Fără bătăi de cap',
+        'features.hassleFree.desc': 'Ne ocupăm de documente și complexități, economisind timpul tău și reducând stresul.',
+
+        // How It Works
+        'howItWorks.title': 'Proces simplu în 3 pași',
+        'howItWorks.subtitle': 'Obținerea beneficiilor tale nu ar trebui să fie complicată.',
+        'howItWorks.step1.title': 'Consultație',
+        'howItWorks.step1.desc': 'Discutăm situația ta pentru a înțelege eligibilitatea.',
+        'howItWorks.step2.title': 'Cerere',
+        'howItWorks.step2.desc': 'Experții noștri te ghidează prin formularele de cerere.',
+        'howItWorks.step3.title': 'Aprobare',
+        'howItWorks.step3.desc': 'Primești decizia și începi să primești beneficiile.',
+
+        // CTA
+        'cta.title': 'Ești pregătit să primești ceea ce ți se cuvine?',
+        'cta.subtitle': 'Mii de oameni din Regatul Unit pierd beneficii la care au dreptul. Nu fi unul dintre ei.',
+        'cta.button': 'Începe evaluarea gratuită',
+
+        // Footer
+        'footer.tagline': 'Te ajutăm să accesezi sprijinul pe care îl meriți.',
+        'footer.services': 'Servicii',
+        'footer.universalCredit': 'Universal Credit',
+        'footer.eligibilityCheck': 'Verificare eligibilitate',
+        'footer.appeals': 'Contestații',
+        'footer.company': 'Companie',
+        'footer.aboutUs': 'Despre noi',
+        'footer.contact': 'Contact',
+        'footer.privacyPolicy': 'Politica de confidențialitate',
+        'footer.contactTitle': 'Contact',
+        'footer.copyright': 'GetBenefit. Toate drepturile rezervate.',
+
+        // Stats
+        'stats.peopleHelped': 'Persoane Ajutate',
+        'stats.benefitsCollected': 'Beneficii Colectate',
+        'stats.yearsExperience': 'Ani de Experiență',
+        'stats.teamMembers': 'Membri ai Echipei',
+
+        // Reviews
+        'reviews.title': 'Ce Spun Clienții Noștri',
+        'reviews.subtitle': 'Povești reale de la persoane pe care le-am ajutat să își solicite beneficiile.',
+        'reviews.review1.title': 'Serviciu uimitor, cererea mea a fost aprobată!',
+        'reviews.review1.text': 'Echipa GetBenefit a făcut întregul proces atât de ușor. M-au ajutat să adun toate documentele și m-au ghidat la fiecare pas. Am primit Universal Credit în 2 săptămâni!',
+        'reviews.review2.title': 'Suport profesional și atent',
+        'reviews.review2.text': 'Mă luptam cu cererea mea de luni de zile. GetBenefit a revizuit totul și a găsit probleme de care nu știam. Datorită lor, acum primesc cu £800 mai mult pe lună!',
+        'reviews.review3.title': 'Recomand cu căldură tuturor',
+        'reviews.review3.text': 'Ca vorbitor non-nativ de engleză, am găsit sistemul de beneficii foarte confuz. Echipa m-a ajutat în limba mea și s-a asigurat că am primit tot ceea ce aveam dreptul. Cu adevărat recunoscător!',
+        'reviews.review4.title': 'Sprijin care schimbă viața',
+        'reviews.review4.text': 'După ce mi-am pierdut locul de muncă, eram copleșit de procesul de beneficii. GetBenefit s-a ocupat de tot pentru mine și am început să primesc plăți mult mai repede decât mă așteptam. Chiar le pasă de a ajuta oamenii.',
+        'reviews.review5.title': 'A depășit toate așteptările',
+        'reviews.review5.text': 'Fusesem respins de două ori înainte de a găsi GetBenefit. Au analizat cazul meu, au identificat ce a mers prost și m-au ajutat să fac contestație cu succes. Acum primesc suma completă la care am dreptul!',
+        'reviews.review6.title': 'Profesionist și eficient',
+        'reviews.review6.text': 'Procesul a fost atât de lin! Au explicat totul clar, m-au ținut la curent la fiecare pas și s-au asigurat că toate documentele mele erau perfecte. Aprobat din prima încercare datorită expertizei lor.',
     },
 };
