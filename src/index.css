@@ -353,11 +353,12 @@ h6 {
 .mobile-menu {
   background: white;
   border-bottom: 1px solid var(--border);
-  overflow: hidden;
+  overflow-y: auto;
   position: fixed;
   top: 70px;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 99;
 }
 
